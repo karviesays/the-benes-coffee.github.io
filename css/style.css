@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+/* Global */
+
+/* *, *:before, *:after {
+  padding: 0;
+  box-sizing: inherit;
+} */
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  height:auto;
+  background: #eee;
+}
+
+main{
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0,0,0,.1),
+  -30px 0px 40px rgba(0,0,0,.1);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container { 
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.current a{
+  color: #eb6e6a;
+  font-weight: bold;
+}
+
+/* Branding */
+header {
+  background: #f3f0ee;
+  box-shadow: 30px 0px 40px rgba(0,0,0,.1),
+  -30px 0px 40px rgba(0,0,0,.1);
+}
+
+header #branding h1 {
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: .5rem;
+  text-align: center;
+}
+
+header nav {
+  margin: 10px 0;
+  font-weight: 100;
+  text-transform: uppercase;
+  
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-flow: column;
+}
+
+header nav li {
+  padding:.5rem 1rem;
+  letter-spacing: .3rem;
+}
+
+header nav a {
+  text-decoration: none;  
+  color: #333;
+}
+
+header nav a:hover {
+  color: #c0392b;
+  transition: 500ms;
+
+}
+
+/* Showcase */
+
+#showcase {
+    display: flex;
+    background: url('../img/showcase.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    flex: 0 1 60vw;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+#showcase h2 {
+  margin-top:  40px;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+#showcase p {
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.5rem;
+  margin: 0 10px;
+}
+/* Boxes */
+
+#boxes {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 2rem;
+  
+}
+
+#boxes .box {
+  padding:10px;
+  text-align: center;
+}
+
+.box img{
+  width: 400px;
+  height: auto;
+}
+
+.box .caption h3 {
+ font-size: 1.5rem;
+ margin: 0;
+}
+
+/* Newsletter */
+
+#newsletter {
+  background: #803522;
+  padding: 1rem 0;
+  color: #eee;
+  text-align: center;
+}
+#newsletter h1 {
+  font-size: 1.5rem;
+  font-weight:100;
+  margin-bottom: 10px;
+}
+
+#newsletter input[type="email"] {
+  padding:4px;
+  margin-right: 4px;
+  margin-bottom: 10px;
+  height: 25px;
+  width: 250px;
+}
+
+#newsletter .btn {
+  padding: 4px;
+  width: 100px;
+  height: 25px;
+  border: none;
+  background-color: #f1a995;
+  border-radius: 50px;
+}
+
+/* About Us Page */
+
+#about-us {
+  margin: 0 2rem;
+  text-align: center;
+}
+
+#about-us p{
+  font-size: .9rem; 
+}
+
+/* Contact Us Page */
+#contact-us{
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+
+.mapouter{
+  text-align:right;
+  min-height:400px;
+  min-width:300px;
+
+}
+
+  .gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    min-height:400px;
+    min-width:300px;
+  }
+
+  iframe {
+    width: 400px;
+    height: 40vh;
+  }
+
+/* Menu */
+#menu img {
+  display: block;
+  width: 100vw;
+  height: auto;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  font-weight: 100;
+  font-size: 20px;
+  margin: 50px 0;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+
+/* Media Queries 500px and Up */
+
+@media (min-width: 500px) {
+  
+  header nav ul {
+    flex-flow: row;
+  }
+  
+  #boxes {
+    margin: 3rem 1rem;
+  }
+
+  #boxes .box {
+    padding: 0 2rem;
+  } 
+
+  .mapouter {
+    margin: auto;
+  }
+
+  #menu img {
+    margin: auto;
+    width: 60vw;
+    height: auto;
+  }
+}
+
+/* Media Queries 700px and Up */
+
+@media (min-width: 700px) {
+  header nav ul {
+    flex-flow: row;
+  } 
+  
+ 
+  #boxes {
+     flex-flow: row nowrap;
+   }
+
+   #boxes .box {
+    width: 100%;
+    text-align: center;
+   }
+
+   #boxes img {
+     display: block;
+     width: 100%;
+   }
+
+   #menu img{
+     width: 40vw;
+   }
+}
